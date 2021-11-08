@@ -83,6 +83,6 @@ export class Router {
       history.pushState(page, '', l);
       
     }
-    this[page]();
+    this[page].call();
   }
 }
